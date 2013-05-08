@@ -1,140 +1,77 @@
-﻿// for TrollEdit
-// v1.0
+﻿// TrollEdit v1.0
+$(document).ready(function()
+{	
+	// btn show features
+	$("#btn-features").click(function()
+	{
+		$("#features-content").slideToggle(1800);
+		$("#btn-features").hide();
+		return false;
+	});
+	
+	// btn close features
+	$("#btn-featuresClose").click(function()
+	{
+		$("#features-content").slideToggle();
+		$("#btn-features").fadeIn(1200);
+		return false;
+	});
+	
+    // btn add members
+	$("#join-team").click(function()
+	{
+		$("#subSection-fork").slideToggle(1100);
+		return false;
+	});
+	
+	// scroll for back to top 
+	$("#backTop").click(function()
+	{
+		$("html, body").animate({scrollTop: $("body").offset().top}, 2000);
+		return false;
+	});
+	
+	// scroll for home  
+	$("#nav-home").click(function()
+	{
+		$("html, body").animate({scrollTop: $("body").offset().top}, 2000);
+		//$("#nav-home").css("color", "#D40505");
+		//$("#nav-team, #nav-download, #nav-contact, #nav-about").css("color","#404040");
+		return false;
+	});
+
+	
+	// scroll for about
+	$("#nav-about").click(function()
+	{
+		$("html, body").animate({scrollTop: $("#scroll-about").offset().top}, 2000);
+		return false;
+	});
+
+	// scroll for team	
+	$("#nav-team").click(function()
+	{
+		$("html, body").animate({scrollTop: $("#scroll-team").offset().top}, 2000);
+		return false;
+	});
+	
+	// scroll for download
+	$("#nav-download").click(function()
+	{
+		$("html, body").animate({scrollTop: $("#scroll-download").offset().top}, 2000);
+		return false;
+	});
+	
+	// scroll for contact
+	$("#nav-contact").click(function()
+	{
+		$("html, body").animate({scrollTop: $("#scroll-contact").offset().top}, 2000);
+		return false;
+	});
+
+});	
  
-//for slide down in about section
-
-$(document).ready(function()
-{	
-    $('#tech-content').hide();
-    
-	$('#tech').click(function()
-	{
-		$('#tech-content').slideToggle(1500);
-		return false;
-	});
-});
-
-
-$(document).ready(function()
-{	
-    $('#screen-content').hide();
-    
-	$('#screen').click(function()
-	{
-		$('#screen-content').slideToggle(1500);
-		return false;
-	});
-});
-
-
-$(document).ready(function()
-{	
-    $('#see-content').hide();
-    
-	$('#see').click(function()
-	{
-		$('#see-content').slideToggle(1500);
-		return false;
-	});
-});
-
-
-$(document).ready(function()
-{	
-    $('#work-content').hide();
-    
-	$('#work').click(function()
-	{
-		$('#work-content').slideToggle(1500);
-		return false;
-	});
-});
-
-$(document).ready(function()
-{	
-    $('#features-content').hide();
-    
-	$('#features').click(function()
-	{
-		$('#features-content').slideToggle(1500);
-		return false;
-	});
-});
-
-
-$(document).ready(function()
-{	
-    $('#why-content').hide();
-    
-	$('#why').click(function()
-	{
-		$('#why-content').slideToggle(1500);
-		return false;
-	});
-});
-
-$(document).ready(function()
-{	
-    $('#idea-content').hide();
-    
-	$('#idea').click(function()
-	{
-		$('#idea-content').slideToggle(1500);
-		return false;
-	});
-});
-
-
-
-
-$(document).ready(function()
-{	
- 	$('#about-content').hide();
- 	
-	$('#about').click(function()
-	{
-		$('#about-content').slideToggle(1500);
-		return false;
-	});
-});
-
-$(document).ready(function()
-{	
-	$('#contact-content').hide();
-	
-	$('#contact').click(function()
-	{
-		$('#contact-content').slideToggle(1500);
-		return false;
-	});
-});
-
-$(document).ready(function()
-{	
-	$('#team-content').hide();
-	
-	$('#team').click(function()
-	{
-		$('#team-content').slideToggle(1500);
-		return false;
-	});
-});
-
-$(document).ready(function()
-{	
-	$('#download-content').hide();
-	$('#download').click(function()
-	{
-		$('#download-content').slideToggle(1500);
-		return false;
-	});
-});
-
-
-
-
 // for slides 
-
 $(document).ready(function()
 {
   var currentPosition = 0;
